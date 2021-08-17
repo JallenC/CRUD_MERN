@@ -1,5 +1,5 @@
 import React from 'react'
 
-export const TodoList = () => {
-    return <div className="container">TodoList</div>
+export const EditTodo = () => {
+    return <div className="container">Edit Todo Item</div>
 }
