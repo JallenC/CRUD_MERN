@@ -1,4 +1,5 @@
 import React from 'react'
+import { useForm } from "react-hook-form";
 
 export const TodoForm = ({ todo, onSubmit }) => {
 
@@ -9,7 +10,6 @@ export const TodoForm = ({ todo, onSubmit }) => {
 
     const SubmitHandler = handleSubmit((data) => {
         onSubmit(data)
-        history.push("/")
     });
     return (
             <form onSubmit={SubmitHandler}>
