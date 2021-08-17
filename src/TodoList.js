@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export const TodoList = () => {
-    const [items, setItems] = useState()
+    const [items, setItems] = useState([])
 
     useEffect(() => {
         setItems([
             {text: "foo", id: 0},
             {text: "bar", id: 1},
-            {text: "bazz", id: 2},
+            {text: "bazz", id: 2}
         ])
     }, [])
 
