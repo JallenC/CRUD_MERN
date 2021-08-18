@@ -16,7 +16,7 @@ export const TodoForm = ({ todo, onSubmit }) => {
                     <label htmlFor="text">
                         Text: 
                     </label> 
-                    <input className="form-control" {...register('text')} type="text" name="text" id="text"/>
+                    <input className="form-control" {...register('text', { required: true })} type="text" name="text" id="text"/>
                 </div>
                 <div className="form-group">
                     <button type="submit" className="btn btn-primary">
