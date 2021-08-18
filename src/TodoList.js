@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { getTodos } from "./api"
+import { getTodos } from "./api";
 
 export const TodoList = () => {
     const [items, setItems] = useState([])
@@ -20,7 +20,7 @@ export const TodoList = () => {
             <table className="table table-striped mt-3">
                 <thead>
                     <tr>
-                        <th>text</th>
+                        <th>Text</th>
                         <th>Action</th>
                     </tr>
                 </thead>
