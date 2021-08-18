@@ -1,5 +1,12 @@
 const express = require("express")
 const cors = require("cors")
+const mongoose = require("mongoose")
+
+mongoose.connect('mongodb://127.0.0.1:2701/todos', { useNewUrlParser: true })
+
+mongoose.connection.once('open', () => {
+    console.log("Mongodb connection established successfully")
+})
 
 const PORT = 4000;
 
