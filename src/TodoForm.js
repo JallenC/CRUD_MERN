@@ -1,8 +1,7 @@
-import React from 'react'
+import React from "react";
 import { useForm } from "react-hook-form";
 
 export const TodoForm = ({ todo, onSubmit }) => {
-
     const {register, handleSubmit} = useForm({ 
         defaultValues: { text: todo ? todo.text : "" },
     });
@@ -10,6 +9,7 @@ export const TodoForm = ({ todo, onSubmit }) => {
     const SubmitHandler = handleSubmit((data) => {
         onSubmit(data)
     });
+
     return (
             <form onSubmit={SubmitHandler}>
                 <div className="form-group">
@@ -25,4 +25,4 @@ export const TodoForm = ({ todo, onSubmit }) => {
                 </div>
             </form>
     );
-}
+};
