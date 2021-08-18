@@ -3,9 +3,11 @@ import { TodoForm } from "./TodoForm";
 import { createTodo } from "./api";
 
 export const CreateTodo = () => {
+    const history = useHistory()
 
-    const onSubmit = (data) => {
-        createTodo(data)
+    const onSubmit = async (data) => {
+        await createTodo(data)
+        history.push("/")
     };
 
     return (
